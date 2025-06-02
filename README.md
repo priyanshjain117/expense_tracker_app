@@ -107,7 +107,6 @@ expense_tracker/
 - **📝 ExpenseList** — Scrollable list of expense entries  
 - **➕ NewExpense** — Modal form for adding expenses
 - **🎨 ThemeProvider** — Dynamic theme management
-- **💾 DataManager** — Local data persistence
 
 ---
 
@@ -169,7 +168,6 @@ flutter build ios
 | ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white) | **UI Framework** | `≥ 3.0.0` |
 | ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white) | **Programming Language** | `≥ 2.18.0` |
 | **Charts** | **Data Visualization** | `Custom Implementation` |
-| **Shared Preferences** | **Local Storage** | `Latest` |
 
 </div>
 
@@ -179,13 +177,15 @@ flutter build ios
 dependencies:
   flutter:
     sdk: flutter
-  intl: ^0.18.0              # Date/number formatting
-  shared_preferences: ^2.0.0  # Local data storage
+  cupertino_icons: ^1.0.8
+  intl: ^0.20.2
+  uuid: ^4.5.1
+  sensors_plus: ^6.1.1
   
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0      # Code analysis
+  flutter_lints: ^5.0.0      # Code analysis
 ```
 
 ---
@@ -197,22 +197,11 @@ dev_dependencies:
 #### Adding New Categories
 ```dart
 enum Category {
-  food(Icons.lunch_dining, 'Food'),
-  travel(Icons.flight_takeoff, 'Travel'),
-  leisure(Icons.movie, 'Leisure'),
-  work(Icons.work, 'Work'),
-  // Add your custom category here
-  shopping(Icons.shopping_bag, 'Shopping');
+  food,
+  travel,
+  leisure,
+  work,
 }
-```
-
-#### Modifying Themes
-```dart
-// In themes/app_theme.dart
-static ThemeData lightTheme = ThemeData(
-  primarySwatch: Colors.purple,  // Change primary color
-  // Customize other theme properties
-);
 ```
 
 ### 🧪 Testing
@@ -225,7 +214,7 @@ flutter test
 flutter test --coverage
 
 # Run specific test file
-flutter test test/models/expense_test.dart
+flutter test test/widget_test.dart
 ```
 
 ---
