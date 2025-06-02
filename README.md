@@ -296,10 +296,9 @@ If this project helped you or you found it interesting:
 
 | Platform | Link | Purpose |
 |:--------:|:----:|:-------:|
-| 📧 **Email** | [your.email@example.com](mailto:your.email@example.com) | Direct contact |
-| 💼 **LinkedIn** | [Your Professional Profile](https://linkedin.com/in/yourprofile) | Professional networking |
-| 🐙 **GitHub** | [@yourusername](https://github.com/yourusername) | More projects |
-| 🐦 **Twitter** | [@yourhandle](https://twitter.com/yourhandle) | Updates & tips |
+| 📧 **Email** | [jainpriyanshu117@gmail.com](mailto:jainpriyanshu117@gmail.com) | Direct contact |
+| 💼 **LinkedIn** | [My Professional Profile](https://www.linkedin.com/in/priyanshu-jain-995b08322/) | Professional networking |
+| 🐙 **GitHub** | [@priyanshjain117](https://github.com/priyanshjain117) | More projects |
 
 **Made with ❤️ using Flutter**
 
