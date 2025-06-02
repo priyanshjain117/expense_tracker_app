@@ -1,0 +1,10 @@
+# Flutter-related
+**/Flutter/ephemeral/
+**/Pods/
+
+# comited by developer
+
+
+# Xcode-related
+**/dgph
+**/xcuserdata/
